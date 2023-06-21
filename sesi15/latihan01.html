@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan jQUERY 01</title>
+    <script src="jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <h3>Judulnya belakangan</h3>
+    <div id="pesan">Isi pesan</div>
+    <div class="pesan">isi pesan</div>
+    <h4>y</h4>
+    <div id="tes">pesan</div>
+    <div class="tes">pesan</div>
+
+    <script>
+        
+        $(function(){
+            $("#pesan").html("Bambank");
+            $(".pesan").html("Bambank part#2");
+            $("h3").html("Dibawah Make jQuery");
+            
+            $("#tes").html("Ini Tes semenit");
+            $(".tes").html("Ini tes semenit by class");
+            $("h4").html("Yang dibawah tes semenit");
+        });
+    </script>
+    
+</body>
+</html>

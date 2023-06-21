@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <div>
+        <div>
+            Celcius
+                <input type="number" id="c">
+        </div>
+        <div>
+            Fahrenheit
+                <input type="number" id="f">
+        </div>
+        <div>
+            Kelvin
+                <input type="numbrt" id="k">
+        </div>
+    </div>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+
+            $("#c").on("input", function(){
+                console.log("Nilai Dari C: "+$("#c").val());
+            });
+            $("#f").on("input", function(){
+                console.log("Nilai Dari F: "+$('#f').val());
+            });
+            $("#k").on("input", function(){
+                console.log("Nilai Dari K: "+$('#k').val());
+            })
+        })
+    </script>
+</body>
+</html>
